@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Fuse from 'fuse.js'
-import Composers from './composers.js'
+import Composers from '../components/composers.js'
 
 export default function Home() {
   const [results, setResults] = useState([]);
