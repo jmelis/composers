@@ -49,7 +49,7 @@ export default function Home() {
 
       <main className={styles.main}>
       <input type="text" onChange={handleChange} />
-      {results.map(e => <li>{e['item'].name} ({e['item'].born} - {e['item'].death}) [{e['item'].style}]</li>)}
+      {results.map(e => <li key={e.refIndex}>{e['item'].name} ({e['item'].born} - {e['item'].death}) [{e['item'].style}]</li>)}
       </main>
     </div>
   )
